@@ -1,15 +1,13 @@
-﻿using Sot.ApiTester.Domain;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using Newtonsoft.Json;
 
 namespace Sot.ApiTester
 {
     [AttributeUsage(AttributeTargets.Method)]
-
     public class RequestFileTestDataAttribute : Attribute, ITestDataSource
     {
         private readonly string _folder;

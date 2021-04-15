@@ -1,5 +1,4 @@
-﻿using Sot.ApiTester.Domain;
-using Sot.ApiTester.Validators;
+﻿using Sot.ApiTester.Validators;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Newtonsoft.Json.Linq;
 using System;

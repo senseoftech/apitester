@@ -17,12 +17,18 @@ namespace Sot.ApiTester.Domain
 
         public HttpRequestMessage RetrieveHttpRequestMessage(Payload payload)
         {
+            AdaptPath(payload);
             var request = new HttpRequestMessage(Method.ToHttpMethod(), Path);
 
             SetRequestContent(request, payload);
             SetRequestHeader(request, payload);
 
             return request;
+        }
+
+        private void AdaptPath(Payload payload)
+        {
+            Path = Path.SubstituteTokens(payload);
         }
 
         private void SetRequestContent(HttpRequestMessage request, Payload payload)

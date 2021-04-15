@@ -1,5 +1,4 @@
-﻿using Sot.ApiTester.Domain;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Sot.ApiTester
 {
@@ -12,6 +11,5 @@ namespace Sot.ApiTester
                 await Step.AssertAsync(step, payload, defaultUrl);
             }
         }
-
     }
 }
