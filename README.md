@@ -1,5 +1,7 @@
 # Api Testers
 
+[![Build Status](https://dev.azure.com/senseoftech/GitHub/_apis/build/status/senseoftech.apitester?branchName=main)](https://dev.azure.com/senseoftech/GitHub/_build/latest?definitionId=7&branchName=main)
+
 This is a project based on Microsoft MsTest play to play HTTP's stories. 
 
 ## How it works. 
@@ -42,7 +44,7 @@ Each document is considered as a unique contextual story.
 
 ### Scenario file location
 
-You need to include your scenarios files into a specific folder called ´´´Scenarios´´´
+You need to include your scenarios files into a specific folder called Â´Â´Â´ScenariosÂ´Â´Â´
 
 You need to add the "copyalways" or "copyifnewer" flag to your scenarios files. 
 
