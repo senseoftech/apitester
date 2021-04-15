@@ -1,0 +1,25 @@
+{
+  "testName": "Dummy test with openapi test",
+  "category": "Integration",
+  "steps": [
+    {
+      "id": "Dummy-GET",
+      "name": "Dummy Get",
+      "request": {
+        "method": "GET",
+        "path": "api/v3/pet/findByStatus?status=available",
+        "baseUrl": "https://petstore3.swagger.io/"
+      },
+      "response": {
+        "resultCode": 200,
+        "expectedContentResult": [
+          {
+            "id": "number",
+            "name": "string?",
+            "status": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
