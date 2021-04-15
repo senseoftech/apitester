@@ -16,7 +16,6 @@ Create a new MSTest project or reuse one with the MSTest dependencies installed.
 On the a test class you need to use a method with the following signature: 
 
 ```cs
-
 using Sot.ApiTester;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading.Tasks;
