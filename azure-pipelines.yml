@@ -1,0 +1,31 @@
+trigger:
+- main
+- feature/*
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: dotnet test
+  inputs:
+    command: 'test'
+    projects: '**/*.Tests.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: dotnet pack
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.csproj'
+    includesymbols: true
+    versioningScheme: 'off'
+
+- task: PublishPipelineArtifact@1
+  displayName: publish artefacts
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    artifact: 'packages'
+    publishLocation: 'pipeline'
