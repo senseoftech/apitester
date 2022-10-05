@@ -1,4 +1,5 @@
 # Api Testers
+Current version : 0.3.0
 
 [![Build Status](https://dev.azure.com/senseoftech/GitHub/_apis/build/status/senseoftech.apitester?branchName=main)](https://dev.azure.com/senseoftech/GitHub/_build/latest?definitionId=7&branchName=main)
 
@@ -76,7 +77,6 @@ public async Task TestScenarioAsync(Payload payload)
 
  ```
 
-
 ### Scenario file format 
 
 You need to include json files into the ```Scenarios``` folder.
@@ -148,12 +148,12 @@ Syntax :
 
 Exemple : 
 
-    Base on a first step with the id : authentication and the response contains the property access_token at the result's root. You can replace the header authorization like that :
-    ```json 
-     "header": { 
-          "authorization": "bearer #authentication/access_token#"
-     }
-     ```
+Base on a first step with the id : authentication and the response contains the property access_token at the result's root. You can replace the header authorization like that :
+ ```json 
+ "header": { 
+    "authorization": "bearer #authentication/access_token#"
+ }
+```
 
 This feature is only available on request.header and request.content. 
 
