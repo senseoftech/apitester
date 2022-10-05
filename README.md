@@ -3,6 +3,9 @@ Current version : 0.3.0
 
 [![Build Status](https://dev.azure.com/senseoftech/GitHub/_apis/build/status/senseoftech.apitester?branchName=main)](https://dev.azure.com/senseoftech/GitHub/_build/latest?definitionId=7&branchName=main)
 
+[Link to NuGet](https://www.nuget.org/packages/Sot.ApiTester)
+
+
 This is a project based on Microsoft MsTest play to play HTTP's stories. 
 
 ## How it works. 
